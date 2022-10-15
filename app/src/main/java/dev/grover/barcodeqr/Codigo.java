@@ -4,6 +4,7 @@ public class Codigo {
 
     String codigo;
     int estado;
+    String tipo;
 
     public String getCodigo() {
         return codigo;
@@ -21,11 +22,20 @@ public class Codigo {
         this.estado = estado;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public Codigo(){}
 
-    public Codigo(String codigo, int estado) {
+    public Codigo(String codigo, int estado, String tipo) {
         this.codigo = codigo;
         this.estado = estado;
+        this.tipo = tipo;
     }
 
     @Override
@@ -33,6 +43,7 @@ public class Codigo {
         return "Codigo{" +
                 "codigo='" + codigo + '\'' +
                 ", estado=" + estado +
+                ", tipo='" + tipo + '\'' +
                 '}';
     }
 }

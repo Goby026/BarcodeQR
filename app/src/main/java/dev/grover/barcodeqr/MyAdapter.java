@@ -36,6 +36,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         holder.codigo.setText(codigo.getCodigo());
         holder.estado.setText("" + codigo.getEstado());
+        holder.tipo.setText(codigo.getTipo());
 
     }
 
@@ -49,14 +50,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 //    en esta clase se enlaza los views del diseño de item
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView codigo, estado;
+        TextView codigo, estado, tipo;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             codigo = itemView.findViewById(R.id.txtCodigo);
-
             estado = itemView.findViewById(R.id.txtEstado);
+            tipo = itemView.findViewById(R.id.txtTipo);
         }
     }
 }

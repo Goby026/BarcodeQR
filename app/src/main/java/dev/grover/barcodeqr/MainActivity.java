@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnUpdate.setOnClickListener(v -> {
-            myMsg(getApplicationContext(), "DESHABILITADO");
+            startActivity( new Intent(getApplicationContext(), UpdateActivity.class) );
+//            myMsg(getApplicationContext(), "DESHABILITADO");
         });
     }
 
